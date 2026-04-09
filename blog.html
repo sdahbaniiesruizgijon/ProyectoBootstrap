@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Bienestar | Serenity</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-soft">
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top shadow-sm" aria-label="Menú principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-heart-pulse-fill me-2"></i>SERENITY
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary px-4" href="cita.html">Pedir Cita</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5" style="margin-top: 80px;">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <h1 class="display-5 mb-4">Recursos para tu bienestar</h1>
+                
+                <article class="card mb-5">
+                    <img src="img/pexels-pavel-danilyuk-6753427.jpg" class="card-img-top" alt="Sesión de apoyo">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <span class="badge rounded-pill bg-soft text-primary border border-primary-subtle px-3">Salud Mental</span>
+                            <small class="text-muted ms-2">12 de Octubre, 2026</small>
+                        </div>
+                        <h2 class="h3 card-title">La importancia de la comunidad en la terapia</h2>
+                        <p class="card-text text-muted">Sentirse escuchado y comprendido por otros que atraviesan situaciones similares es un pilar fundamental para la recuperación emocional y el crecimiento personal...</p>
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Leer más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="card mb-5">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <span class="badge rounded-pill bg-soft text-success border border-success-subtle px-3">Nutrición</span>
+                            <small class="text-muted ms-2">08 de Octubre, 2026</small>
+                        </div>
+                        <h2 class="h3 card-title">5 Alimentos que reducen la ansiedad de forma natural</h2>
+                        <p class="card-text text-muted">Lo que comemos afecta directamente a nuestra química cerebral. Descubre qué alimentos ayudan a mantener niveles estables de serotonina y reducen el cortisol...</p>
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Leer más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <nav aria-label="Navegación del blog">
+                    <ul class="pagination pagination-lg justify-content-center">
+                        <li class="page-item disabled"><span class="page-link">Anterior</span></li>
+                        <li class="page-item active"><span class="page-link">1</span></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <aside class="col-lg-4">
+                <div class="sticky-top" style="top: 100px;">
+                    <div class="card p-4 mb-4">
+                        <h3 class="h5 mb-3">Buscar</h3>
+                        <form class="input-group">
+                            <input type="text" class="form-control" placeholder="Ej: Meditación">
+                            <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="card p-4">
+                        <h3 class="h5 mb-3">Categorías</h3>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent">
+                                Psicología <span class="badge bg-soft text-primary rounded-pill">12</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent">
+                                Meditación <span class="badge bg-soft text-primary rounded-pill">8</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent">
+                                Alimentación <span class="badge bg-soft text-primary rounded-pill">5</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer-bottom py-5 border-top bg-white">
+        <div class="container text-center">
+            <p class="mb-0 text-muted">© 2026 Serenity Bienestar - Tu espacio de salud integral.</p>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

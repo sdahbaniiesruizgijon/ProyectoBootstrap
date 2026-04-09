@@ -1,0 +1,19 @@
+//Variables
+$primary: #78a5a3;
+$border-radius: 2rem;
+
+// funciones
+@import "base/mixins"; 
+
+//Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//base y layout
+@import "base/reset";
+@import "layout/sections";
+
+//componentes
+@import "componentes/navbar";
+@import "componentes/cards";
+@import "componentes/footer";
+@import "componentes/form";

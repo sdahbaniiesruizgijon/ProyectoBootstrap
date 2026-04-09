@@ -1,0 +1,6 @@
+export const CONFIG = {
+    MAX_CHARS_MESSAGE: 200,
+    SCROLL_THRESHOLD: 400,
+    REVEAL_DISTANCE: '30px',
+    TRANSITION_SPEED: '0.6s'
+};

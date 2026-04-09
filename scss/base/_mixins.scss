@@ -1,0 +1,29 @@
+/* Mixin para centrar elementos con Flexbox */
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mixin para sombras personalizadas */
+@mixin soft-shadow($opacity: 0.1) {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, $opacity);
+}
+
+/* Mixin para transiciones rápidas */
+@mixin transition-standard {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mixin para botones con efectos de hover */
+@mixin btn-custom($bg-color) {
+    background-color: $bg-color;
+    border: none;
+    color: white;
+    @include transition-standard;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+        transform: translateY(-2px);
+    }
+}

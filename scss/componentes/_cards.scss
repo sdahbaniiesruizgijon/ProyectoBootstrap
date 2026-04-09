@@ -1,0 +1,42 @@
+.card {
+    border: none;
+    background-color: #ffffff;
+
+    @include soft-shadow(0.05);
+    
+    /*función de transición */
+    @include transition-standard;
+    
+    overflow: hidden;
+}
+
+.card:hover {
+    /* Elevación simple */
+    transform: translateY(-5px);
+    
+    /* Sombra más profunda al pasar el ratón */
+    @include soft-shadow(0.15);
+}
+
+.card-img-top {
+    /* Mantiene la proporción de las imágenes */
+    object-fit: cover;
+    height: 220px;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Iconos para la sección de servicios */
+.card-icon {
+    font-size: 2.5rem;
+    color: $primary;
+    margin-bottom: 1rem;
+    display: block;
+    
+    /* Si el icono es un elemento flex, lo centramos con la función */
+    &.text-center {
+        @include flex-center;
+    }
+}

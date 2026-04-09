@@ -1,0 +1,46 @@
+body {
+    background-color: #fdfcf9;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    /* Aplicamos la tipografía base si decides usar una específica */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* Usamos nuestra función de transición */
+    @include transition-standard;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+/* Accesibilidad: foco visible */
+button:focus, 
+a:focus, 
+input:focus {
+    outline: 2px solid rgba($primary, 0.5);
+    outline-offset: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Clase de utilidad para secciones con fondo suave */
+.section-peace {
+    background-color: rgba($primary, 0.03);
+    padding: 4rem 0;
+    /* Usamos nuestra función de sombra suave */
+    @include soft-shadow(0.02);
+}

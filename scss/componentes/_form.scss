@@ -1,0 +1,35 @@
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.form-control, .form-select {
+    border-radius: calc($border-radius / 2);
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+    @include transition-standard;
+
+    &:focus {
+        border-color: $primary;
+        box-shadow: 0 0 0 0.25rem rgba($primary, 0.1);
+        outline: none;
+    }
+}
+
+/* Feedback de validación */
+.was-validated .form-control:invalid {
+    border-color: #e74c3c;
+}
+
+.was-validated .form-control:valid {
+    border-color: $primary;
+}
+
+.btn-submit {
+    @include btn-custom($primary);
+    padding: 1rem 2rem;
+    width: 100%;
+    font-weight: 600;
+    border-radius: $border-radius;
+}
