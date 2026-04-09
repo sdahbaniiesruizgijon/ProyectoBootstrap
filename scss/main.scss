@@ -11,6 +11,7 @@ $border-radius: 2rem;
 //base y layout
 @import "base/reset";
 @import "layout/sections";
+@import "pages/status";
 
 //componentes
 @import "componentes/navbar";

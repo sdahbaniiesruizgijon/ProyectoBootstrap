@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Bienestar | Serenity</title>
+    <meta name="description" content="Recursos y artículos sobre salud mental, nutrición y bienestar integral.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
@@ -22,7 +23,7 @@
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-primary px-4" href="cita.html">Pedir Cita</a></li>
+                        <li class="nav-item ms-lg-3"><a class="nav-link btn btn-primary px-4 text-white" href="cita.html">Pedir Cita</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,66 +32,116 @@
 
     <main class="container py-5" style="margin-top: 80px;">
         <div class="row g-4">
+            
             <div class="col-lg-8">
-                <h1 class="display-5 mb-4">Recursos para tu bienestar</h1>
-                
-                <article class="card mb-5">
-                    <img src="img/pexels-pavel-danilyuk-6753427.jpg" class="card-img-top" alt="Sesión de apoyo">
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <span class="badge rounded-pill bg-soft text-primary border border-primary-subtle px-3">Salud Mental</span>
-                            <small class="text-muted ms-2">12 de Octubre, 2026</small>
-                        </div>
-                        <h2 class="h3 card-title">La importancia de la comunidad en la terapia</h2>
-                        <p class="card-text text-muted">Sentirse escuchado y comprendido por otros que atraviesan situaciones similares es un pilar fundamental para la recuperación emocional y el crecimiento personal...</p>
-                        <a href="#" class="text-primary fw-bold text-decoration-none">Leer más <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </article>
+                <h1 class="display-5 mb-4 fw-bold">Recursos para tu bienestar</h1>
 
-                <article class="card mb-5">
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <span class="badge rounded-pill bg-soft text-success border border-success-subtle px-3">Nutrición</span>
-                            <small class="text-muted ms-2">08 de Octubre, 2026</small>
+                <div id="blog-items-container">
+                    
+                    <article class="card mb-4 border-0 shadow-sm overflow-hidden blog-item" data-tags="nutriapp angular calorias comida dieta">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" class="img-fluid h-100 object-fit-cover" alt="NutriApp">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Proyecto Angular</span>
+                                    <h2 class="h4 card-title fw-bold">NutriApp: Controla tus calorías y comidas</h2>
+                                    <p class="card-text text-muted small">Gestiona tu alimentación diaria con nuestra herramienta hermana. Calcula calorías, registra ingredientes y descubre recetas nutritivas.</p>
+                                    <a href="https://ruix.iesruizgijon.es/sedahbani/ProyectoAngular/frontend/" target="_blank" class="btn btn-sm btn-outline-primary">Visitar NutriApp <i class="bi bi-box-arrow-up-right"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <h2 class="h3 card-title">5 Alimentos que reducen la ansiedad de forma natural</h2>
-                        <p class="card-text text-muted">Lo que comemos afecta directamente a nuestra química cerebral. Descubre qué alimentos ayudan a mantener niveles estables de serotonina y reducen el cortisol...</p>
-                        <a href="#" class="text-primary fw-bold text-decoration-none">Leer más <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </article>
+                    </article>
 
-                <nav aria-label="Navegación del blog">
-                    <ul class="pagination pagination-lg justify-content-center">
-                        <li class="page-item disabled"><span class="page-link">Anterior</span></li>
-                        <li class="page-item active"><span class="page-link">1</span></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-                    </ul>
-                </nav>
+                    <article class="card mb-4 border-0 shadow-sm blog-item" data-tags="psicologia estres ansiedad">
+                        <div class="card-body p-4">
+                            <span class="badge bg-soft text-primary border border-primary-subtle mb-2">Psicología</span>
+                            <h2 class="h4 card-title fw-bold">Cómo gestionar el estrés laboral</h2>
+                            <p class="card-text text-muted">Aprende técnicas cognitivo-conductuales para mantener la calma en entornos de alta presión y mejorar tu productividad.</p>
+                            <a href="#" class="text-primary fw-bold text-decoration-none small">Leer más <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card mb-4 border-0 shadow-sm blog-item" data-tags="meditacion mindfulness relax">
+                        <div class="card-body p-4">
+                            <span class="badge bg-soft text-info border border-info-subtle mb-2">Meditación</span>
+                            <h2 class="h4 card-title fw-bold">Guía de inicio al Mindfulness</h2>
+                            <p class="card-text text-muted">No necesitas horas, con 5 minutos al día puedes empezar a entrenar tu atención plena y reducir la rumiación mental.</p>
+                            <a href="#" class="text-primary fw-bold text-decoration-none small">Leer más <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card mb-4 border-0 shadow-sm blog-item" data-tags="comida nutricion salud">
+                        <div class="card-body p-4">
+                            <span class="badge bg-soft text-success border border-success-subtle mb-2">Nutrición</span>
+                            <h2 class="h4 card-title fw-bold">Superalimentos: Mitos y Realidades</h2>
+                            <p class="card-text text-muted">¿Realmente la chía es milagrosa? Analizamos qué alimentos aportan valor real a tu dieta diaria según la ciencia.</p>
+                            <a href="#" class="text-primary fw-bold text-decoration-none small">Leer más <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card mb-4 border-0 shadow-sm blog-item" data-tags="descanso sueño salud">
+                        <div class="card-body p-4">
+                            <span class="badge bg-soft text-dark border border-dark-subtle mb-2">Descanso</span>
+                            <h2 class="h4 card-title fw-bold">Higiene del sueño para un mejor descanso</h2>
+                            <p class="card-text text-muted">Evitar pantallas antes de dormir y mantener una temperatura fresca son claves para alcanzar un sueño reparador.</p>
+                            <a href="#" class="text-primary fw-bold text-decoration-none small">Leer más <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card mb-4 border-0 shadow-sm blog-item" data-tags="ejercicio deporte energia">
+                        <div class="card-body p-4">
+                            <span class="badge bg-soft text-warning border border-warning-subtle mb-2">Ejercicio</span>
+                            <h2 class="h4 card-title fw-bold">Beneficios del ejercicio en la salud mental</h2>
+                            <p class="card-text text-muted">Caminar 30 minutos al día libera endorfinas suficientes para mejorar tu estado de ánimo de forma inmediata.</p>
+                            <a href="#" class="text-primary fw-bold text-decoration-none small">Leer más <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <div id="no-results" class="text-center py-5 d-none">
+                        <i class="bi bi-search fs-1 text-muted"></i>
+                        <p class="mt-3">No hemos encontrado artículos que coincidan.</p>
+                    </div>
+
+                </div>
+
+                <nav aria-label="Navegación del blog" class="mt-5">
+    <ul class="pagination justify-content-center shadow-sm" id="pagination-controls">
+        <li class="page-item" id="prev-page"><a class="page-link" href="#">Anterior</a></li>
+        <li class="page-item page-num active" data-page="1"><a class="page-link" href="#">1</a></li>
+        <li class="page-item page-num" data-page="2"><a class="page-link" href="#">2</a></li>
+        <li class="page-item page-num" data-page="3"><a class="page-link" href="#">3</a></li>
+        <li class="page-item" id="next-page"><a class="page-link" href="#">Siguiente</a></li>
+    </ul>
+</nav>
             </div>
 
             <aside class="col-lg-4">
                 <div class="sticky-top" style="top: 100px;">
-                    <div class="card p-4 mb-4">
-                        <h3 class="h5 mb-3">Buscar</h3>
-                        <form class="input-group">
-                            <input type="text" class="form-control" placeholder="Ej: Meditación">
-                            <button class="btn btn-primary" type="button"><i class="bi bi-search"></i></button>
-                        </form>
+                    <div class="card p-4 mb-4 border-0 shadow-sm">
+                        <h3 class="h5 mb-3 fw-bold">Buscar</h3>
+                        <div class="input-group">
+                            <input type="text" id="blog-search" class="form-control" placeholder="Ej: NutriApp, Dieta...">
+                            <span class="input-group-text bg-primary text-white border-0"><i class="bi bi-search"></i></span>
+                        </div>
                     </div>
 
-                    <div class="card p-4">
-                        <h3 class="h5 mb-3">Categorías</h3>
+                    <div class="card p-4 border-0 shadow-sm">
+                        <h3 class="h5 mb-3 fw-bold">Categorías</h3>
                         <div class="list-group list-group-flush">
-                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent">
-                                Psicología <span class="badge bg-soft text-primary rounded-pill">12</span>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent">
-                                Meditación <span class="badge bg-soft text-primary rounded-pill">8</span>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent">
-                                Alimentación <span class="badge bg-soft text-primary rounded-pill">5</span>
-                            </a>
+                            <button class="list-group-item list-group-item-action border-0 px-0 d-flex justify-content-between align-items-center active fw-bold" data-filter="todos">
+                                Todos <span><i class="bi bi-chevron-right"></i></span>
+                            </button>
+                            <button class="list-group-item list-group-item-action border-0 px-0 d-flex justify-content-between align-items-center" data-filter="psicologia">
+                                Psicología <span><i class="bi bi-chevron-right"></i></span>
+                            </button>
+                            <button class="list-group-item list-group-item-action border-0 px-0 d-flex justify-content-between align-items-center" data-filter="nutricion">
+                                Nutrición <span><i class="bi bi-chevron-right"></i></span>
+                            </button>
+                            <button class="list-group-item list-group-item-action border-0 px-0 d-flex justify-content-between align-items-center" data-filter="meditacion">
+                                Meditación <span><i class="bi bi-chevron-right"></i></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -98,9 +149,9 @@
         </div>
     </main>
 
-    <footer class="footer-bottom py-5 border-top bg-white">
+    <footer class="py-5 bg-white border-top mt-5">
         <div class="container text-center">
-            <p class="mb-0 text-muted">© 2026 Serenity Bienestar - Tu espacio de salud integral.</p>
+            <p class="text-muted mb-0">© 2026 Serenity Bienestar. Tu espacio de salud integral.</p>
         </div>
     </footer>
 

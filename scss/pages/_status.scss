@@ -1,0 +1,50 @@
+// scss/pages/_status.scss
+
+.status-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Hemos dejado solo una definición de altura para evitar conflictos */
+    min-height: calc(100vh - 160px); 
+    padding: 2rem 0;
+
+    .status-card {
+        max-width: 600px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .status-icon {
+            font-size: 5.5rem;
+            
+            // Estilo para el check de Gracias
+            &.success {
+                /* CAMBIO AQUÍ: Usamos $primary (estándar de Bootstrap) 
+                   o $brand-primary si la tienes definida en tus variables globales */
+                color: $primary; 
+                animation: scaleIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+
+            // Estilo para el triángulo de Error 404
+            &.error {
+                color: #e6b89c; // Un tono arena/aviso suave
+                animation: float 3s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+// Animación para el check de éxito
+@keyframes scaleIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+// Animación de flotación para el error
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}

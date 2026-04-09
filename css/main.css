@@ -11943,6 +11943,56 @@ section {
   margin: 0 auto;
 }
 
+.status-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Hemos dejado solo una definición de altura para evitar conflictos */
+  min-height: calc(100vh - 160px);
+  padding: 2rem 0;
+}
+.status-page .status-card {
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+.status-page .status-card:hover {
+  transform: translateY(-5px);
+}
+.status-page .status-card .status-icon {
+  font-size: 5.5rem;
+}
+.status-page .status-card .status-icon.success {
+  /* CAMBIO AQUÍ: Usamos $primary (estándar de Bootstrap) 
+     o $brand-primary si la tienes definida en tus variables globales */
+  color: #78a5a3;
+  animation: scaleIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.status-page .status-card .status-icon.error {
+  color: #e6b89c;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .navbar {
   padding: 1rem 0;
   transition: all 0.3s ease-in-out;

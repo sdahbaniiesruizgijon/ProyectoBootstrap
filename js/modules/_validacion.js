@@ -11,7 +11,7 @@ export const initFormValidation = () => {
         let esValido = true;
         let errores = []; // Para acumular los mensajes de error
 
-        // 1. Validar Nombre
+        //  Validar Nombre
         const nombre = document.getElementById('nombre');
         if (!reglas.nombre.test(nombre.value)) {
             nombre.classList.add('is-invalid');
@@ -23,7 +23,7 @@ export const initFormValidation = () => {
             nombre.classList.add('is-valid');
         }
 
-        // 2. Validar Email
+        //  Validar Email
         const email = document.getElementById('email');
         if (email && !reglas.email.test(email.value)) {
             email.classList.add('is-invalid');
@@ -35,7 +35,7 @@ export const initFormValidation = () => {
             email.classList.add('is-valid');
         }
 
-        // 3. Validar Fecha (No puede ser anterior a hoy)
+        //  Validar Fecha
         const fecha = document.getElementById('fecha');
         if (fecha && fecha.value) {
             const fechaSeleccionada = new Date(fecha.value);
@@ -63,8 +63,10 @@ export const initFormValidation = () => {
             // Aquí lanzamos el alert para que veas que sí funciona
             alert("⚠️ Por favor, corrige los siguientes errores:\n\n- " + errores.join("\n- "));
         } else {
-            alert("✅ Formulario enviado correctamente. ¡Nos vemos pronto!");
-        }
+
+    event.preventDefault(); 
+    window.location.href = 'gracias.html'; 
+}
 
         form.classList.add('was-validated');
     });
